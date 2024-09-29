@@ -1,0 +1,302 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+#page {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  scroll-padding-top: 200px;
+  scroll-behavior: smooth;
+  /*==============================Header===================================== */
+  #header {
+    background-color: #fffffd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    padding: 2em 0em 2em;
+    position: sticky; /* Changed to fixed */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 19px 10px,
+      rgba(0, 0, 0, 0.2) 0px 15px 12px;
+    h1 {
+      color: #199486;
+    }
+    h3 {
+      color: #808080;
+    }
+    nav {
+      ul {
+        display: flex;
+        gap: 4em;
+        li {
+          list-style: none;
+          font-size: 1.5em;
+
+          a {
+            text-decoration: none;
+            color: #666667;
+            cursor: pointer;
+          }
+          a:hover{
+            color:#84c795 ; 
+         }
+        }
+      }
+    }
+    
+  }
+  /* ---------------------------Scroll-page-------------------------------- */
+  #Scroll-pg {
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    #Scroll-pg::-webkit-scrollbar {
+      display: none;
+    }
+    
+    /* ===============================About-pg================================ */
+
+    #about-pg {
+      background-color: #84c795;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 1em;
+      #about-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        #para1 {
+          p {
+            font-size: 2em;
+            width: 50vw;
+            text-align: center;
+            padding-top: 1em;
+          }
+        }
+        #para2 {
+          p {
+            font-size: 2em;
+            width: 45vw;
+            text-align: center;
+            padding-top: 1em;
+          }
+        }
+        #para3 {
+          p {
+            font-size: 2em;
+            width: 30vw;
+            text-align: center;
+            padding-top: 1em;
+            color: #666667;
+          }
+        }
+      }
+      #about-icons {
+        padding-top: 2em;
+        cursor: pointer;
+        i {
+          width: 3em;
+        }
+      }
+      #DT {
+        padding-top: 2em;
+        padding-bottom: 7em;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        #date,
+        #time {
+          display: flex;
+          gap: 5px;
+          cursor: pointer;
+          p {
+            font-size: 1.2em;
+          }
+        }
+      }
+    }
+
+    /* -------------------------------------event-page---------------------------------- */
+    #event-page {
+      background-color: #fffffd;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1em 0em;
+      h3 {
+        padding: 1.5em 0em;
+        color: #666667;
+      }
+      #circle {
+        height: 450px;
+        width: 450px;
+        background-color: #84c795;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 50%;
+        padding: 2em;
+        p {
+          font-size: 1.5em;
+        }
+      }
+    }
+
+    /* -----------------------------------Register-page-------------------------------- */
+    #form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 4em;
+      padding-bottom: 4em;
+      #outer-box {
+        width: 600px;
+        height: 90em;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+          rgba(0, 0, 0, 0.05) 0px 5px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #inner-box {
+        width: 450px;
+        height: 80em;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+          rgba(0, 0, 0, 0.05) 0px 5px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+        padding: 1em;
+        header {
+          text-align: center;
+          h1 {
+            color: #199486;
+            padding-bottom: 0.5em;
+          }
+          p {
+            font-size: 1.3em;
+            text-decoration: underline;
+          }
+        }
+        #input-box {
+          display: flex;
+          flex-direction: column;
+          gap: 1em;
+          label {
+            font-size: 1.2em;
+          }
+          input {
+            width: 420px;
+            height: 40px;
+
+            border: none;
+            border-bottom: 2px solid black;
+            font-size: 1.5em;
+          }
+          #year {
+            display: flex;
+            flex-direction: column;
+            #yr {
+              display: flex;
+              align-items: center;
+              gap: 0.2em;
+              padding-left: 1em;
+              label {
+                font-size: 1em;
+              }
+            }
+            input {
+              width: 15px;
+            }
+          }
+          #gender {
+            display: flex;
+            flex-direction: column;
+
+            #gen {
+              display: flex;
+              align-items: center;
+              gap: 0.2em;
+              padding-left: 1em;
+              label {
+                font-size: 1em;
+              }
+            }
+            input {
+              width: 15px;
+            }
+          }
+          #dob {
+            display: flex;
+            flex-direction: column;
+            label {
+              padding-bottom: 10px;
+            }
+            input {
+              width: 200px;
+              text-align: center;
+              outline: none;
+              border: 1px solid black;
+            }
+          }
+          #skills {
+            display: flex;
+            flex-direction: column;
+            #skill {
+              display: flex;
+              align-items: center;
+              gap: 0.5em;
+              padding-left: 1em;
+              label {
+                font-size: 1em;
+              }
+            }
+            input {
+              width: 15px;
+            }
+          }
+          #text-area {
+            display: flex;
+            flex-direction: column;
+
+            textarea {
+              padding: 10px;
+              height: 100px;
+            }
+          }
+          #btn {
+            button {
+              padding: 0.5em 3em;
+              background-color: black;
+              color: white;
+              border-radius: 10px;
+              font-size: 1em;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* ---------Res..----------- */
+/* @media (max-width:1100px) {
+    #page{
+        #about-pg{
+         
+        }
+    }
+} */
